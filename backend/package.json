@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc && node dist/index.js",
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:generate": "typeorm-ts-node-commonjs migration:generate src/migrations/NameOfMigration -d src/data-source.ts",
     "migration:run": "typeorm-ts-node-commonjs migration:run -d src/data-source.ts"
